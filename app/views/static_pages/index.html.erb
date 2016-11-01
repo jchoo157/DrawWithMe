@@ -1,0 +1,19 @@
+<center><div id="new_drawing">
+
+  <center><h1>Drawings</h1></center>
+
+  <div class="drawings_index">
+    <% if @drawings %>
+      <%= @drawings.reverse.each do |drawing| %>
+        <center><h4><%= drawing.title %></h4></center>
+       
+        <center><img src="<%= drawing.image_url %>", class="image_border"></center>
+      <% end %>
+    <% else %>
+      <p> No drawings yet, be the first! <%= link_to 'Draw', new_drawing_path %></p>
+    <% end %>
+  </div>
+
+</div></center>
+
+
