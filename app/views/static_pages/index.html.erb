@@ -1,4 +1,4 @@
-<center><div id="new_drawing font30">
+<div id="new_drawing font30">
 
   <div class="slider center autplay">
     <% @drawings.each do |drawing| %>
@@ -6,28 +6,20 @@
     <% end %>
   </div>
 
-  <center><div id="map"></div></center>
+  <center><div id="map" class="box-shadow"></div></center>
 
 
   <% unless current_user %>
     <h4>Sign up or log in to start drawing!</h3>
   <% end %>
 
-  <div class="drawings_index">
-    <% if @drawings %>
-      <% @drawings.reverse.each do |drawing| %>
-        <div class="img_outer float-left box-shadow">
-          <center><h4 class="lowermarginh4">Title: <%= drawing.title %></h4></center>
-         
-          <center><img src="<%= drawing.image_url %>", class="image_border box"></center>
-          <p class="artist_margin">Artist: </p>
-        </div>
-      <% end %>
-    <% else %>
-      <p> No drawings yet, be the first! <%= link_to 'Draw', new_drawing_path %></p>
+  <ul class="flex-container">
+    <% @drawings.each do |drawing| %>
+      <img src="<%= drawing.image_url %>" class="flex-item box-shadow">
     <% end %>
-  </div>
+  </ul>
 
-</div></center>
+</div>
+
 
 
