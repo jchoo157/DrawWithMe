@@ -4,9 +4,15 @@
     <title>DrawWithMe</title>
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['google_api']%>&callback=initMap">
+    </script>
   </head>
 
   <body>

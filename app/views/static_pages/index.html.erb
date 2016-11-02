@@ -6,7 +6,7 @@
     <% end %>
   </div>
 
-  <center><h1 class="coiny">Drawings</h1></center>
+  <center><div id="map"></div></center>
 
 
   <% unless current_user %>
@@ -17,9 +17,10 @@
     <% if @drawings %>
       <% @drawings.reverse.each do |drawing| %>
         <div class="img_outer float-left box-shadow">
-          <center><h4>Title: <%= drawing.title %></h4></center>
+          <center><h4 class="lowermarginh4">Title: <%= drawing.title %></h4></center>
          
           <center><img src="<%= drawing.image_url %>", class="image_border box"></center>
+          <p class="artist_margin">Artist: </p>
         </div>
       <% end %>
     <% else %>
