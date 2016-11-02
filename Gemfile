@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'pry-rails'
+gem "jquery-slick-rails"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

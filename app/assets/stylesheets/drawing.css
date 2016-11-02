@@ -1,3 +1,52 @@
+.coiny {
+  font-family: 'Coiny', cursive;
+  font-size: 60px;
+  margin: -10px;
+}
+
+.float-left {
+  float: left;
+}
+
+.box-shadow {
+  box-shadow: 10px 10px 5px #799ff2;
+}
+
+.drawings_index {
+  width: 90%;
+  background: #eee;
+  margin: 0 auto;
+  position: relative;
+  text-align:center;
+}
+
+.user_drawings {
+  background: white;
+  display:inline-block;
+  margin: 10px;
+}
+
+
+.image_border {
+ /* background-color: white;
+  border: 1px solid black;
+  height: 200px;
+  width: 300px;*/
+  background: white;
+  height: 150px;
+  width: 250px;
+  display:inline-block;
+  margin: 10px;
+}
+
+.img_outer {
+  background-color: #4464aa;
+  border-radius: 8px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  margin: 20px;
+}
+
 #map {
   width: 500px;
   height: 400px;
@@ -8,13 +57,10 @@
   border: 1px solid black;
 }
 
-.image_border {
-  border: 1px solid black;
-}
-
-img:hover {
-  background-color: yellow;
-  opacity: .5;
+.coinyh2 {
+  font-family: 'Coiny', cursive;
+  font-size: 30px;
+  margin: -8px;
 }
 
 .comment_style {
@@ -39,6 +85,8 @@ img:hover {
 .btn {
   margin-top: 5px;
 }
+
+
 
 
 

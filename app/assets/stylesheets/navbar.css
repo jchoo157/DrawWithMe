@@ -1,13 +1,15 @@
 .ul_nav {
     list-style-type: none;
+    font-family: 'Coiny', cursive;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #E54B4B;
 }
 
 .ul_nav > li {
     float: left;
+    border-right: 1px solid black;
 }
 
 .ul_nav > li a {
@@ -20,5 +22,9 @@
 
 /* Change the link color to #111 (black) on hover */
 .ul_nav > li a:hover {
-    background-color: #111;
+    background-color: #b71919;
+}
+
+.float-right {
+  float: right;
 }

@@ -1,13 +1,26 @@
-<center><div id="new_drawing">
+<center><div id="new_drawing font30">
 
-  <center><h1>Drawings</h1></center>
+  <div class="slider center autplay">
+    <% @drawings.each do |drawing| %>
+      <img src="<%= drawing.image_url %>", class="image_border slick-image">
+    <% end %>
+  </div>
+
+  <center><h1 class="coiny">Drawings</h1></center>
+
+
+  <% unless current_user %>
+    <h4>Sign up or log in to start drawing!</h3>
+  <% end %>
 
   <div class="drawings_index">
     <% if @drawings %>
-      <%= @drawings.reverse.each do |drawing| %>
-        <center><h4><%= drawing.title %></h4></center>
-       
-        <center><img src="<%= drawing.image_url %>", class="image_border"></center>
+      <% @drawings.reverse.each do |drawing| %>
+        <div class="img_outer float-left box-shadow">
+          <center><h4><%= drawing.title %></h4></center>
+         
+          <center><img src="<%= drawing.image_url %>", class="image_border box"></center>
+        </div>
       <% end %>
     <% else %>
       <p> No drawings yet, be the first! <%= link_to 'Draw', new_drawing_path %></p>

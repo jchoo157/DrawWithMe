@@ -8,13 +8,11 @@ class DrawingsController < ApplicationController
   end
 
   def create
-    layout :false
-
     @drawing = current_user.drawings.new(title: params[:title], image_url: params[:image])
 
     if request.xhr?
       if @drawing.save
-        redirect_to drawing_path(@drawing)
+        render "show", layout: false
       else
         render 'new'
       end
