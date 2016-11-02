@@ -2,7 +2,7 @@
 
   <div class="slider center autplay">
     <% @drawings.each do |drawing| %>
-      <img src="<%= drawing.image_url %>", class="image_border slick-image">
+      <img src="<%= drawing.image_url %>", class="image_border slick-image box-shadow">
     <% end %>
   </div>
 
@@ -17,7 +17,7 @@
     <% if @drawings %>
       <% @drawings.reverse.each do |drawing| %>
         <div class="img_outer float-left box-shadow">
-          <center><h4><%= drawing.title %></h4></center>
+          <center><h4>Title: <%= drawing.title %></h4></center>
          
           <center><img src="<%= drawing.image_url %>", class="image_border box"></center>
         </div>

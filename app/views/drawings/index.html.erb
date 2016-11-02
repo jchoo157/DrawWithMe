@@ -3,7 +3,7 @@
 <div class="">
   <% if @drawings %>
     <% @drawings.reverse.each do |drawing| %>
-      <center><h4><%= drawing.title %></h4></center>
+      <center><h4>Title: <%= drawing.title %></h4></center>
      
       <center><a href="/drawings/<%= drawing.id %>"><img class="user_drawings" src="<%= drawing.image_url %>"></a></center>
     <% end %>
