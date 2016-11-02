@@ -1,4 +1,7 @@
 @import "compass/css3";
+.slick-slide {
+  margin-top: 60px !important;
+}
 
 .flex-container {
   padding: 0;
@@ -16,7 +19,8 @@
 }
 
 .flex-item {
-  background: tomato;
+  border: 1px solid black;
+  background: white;
   padding: 5px;
   width: 200px;
   height: 150px;
@@ -41,7 +45,7 @@
 }
 
 .box-shadow {
-  box-shadow: 10px 10px 5px #8eb2ff;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .drawings_index {

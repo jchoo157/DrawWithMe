@@ -1,5 +1,4 @@
 class DrawingsController < ApplicationController
-
   def index
     @drawings = current_user.drawings
   end

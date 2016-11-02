@@ -1,10 +1,14 @@
 .ul_nav {
     list-style-type: none;
     font-family: 'Rajdhani', sans-serif;
-    margin: 0;
+    margin-top: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #542cf4;
+    background-color: #f9f9f9;
+    /*position: fixed;*/
+    width: 100%;
+    z-index: 3;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .ul_nav > li {
@@ -14,7 +18,7 @@
 
 .ul_nav > li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -22,7 +26,7 @@
 
 /* Change the link color to #111 (black) on hover */
 .ul_nav > li a:hover {
-    background-color: #b71919;
+    background-color: #ffff89;
 }
 
 .float-right {
