@@ -35,7 +35,7 @@ class DrawingsController < ApplicationController
   def destroy
     @drawing = Drawing.find(params[:id])
     @drawing.destroy
-    redirect_to root_path
+    redirect_to drawings_path
   end
 
   private

@@ -14,8 +14,10 @@
   <% end %>
 
   <ul class="flex-container">
-    <% @drawings.each do |drawing| %>
-      <img src="<%= drawing.image_url %>" class="flex-item box-shadow">
+    <% @drawings.reverse.each do |drawing| %>
+      <div class="img_border">
+        <img src="<%= drawing.image_url %>" class="flex-item box-shadow">
+      </div>
     <% end %>
   </ul>
 

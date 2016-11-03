@@ -6,6 +6,10 @@
       <center><h4>Title: <%= drawing.title %></h4></center>
      
       <center><a href="/drawings/<%= drawing.id %>"><img class="user_drawings" src="<%= drawing.image_url %>"></a></center>
+
+      <center><%= link_to 'Delete', drawing_path(drawing), method: :delete %>
+        <%= link_to 'Edit', edit_drawing_path(drawing) %>
+      </center>
     <% end %>
   <% else %>
     <p> You have no drawings yet! Go draw! <%= link_to 'Draw', root_path %></p>

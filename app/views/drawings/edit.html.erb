@@ -1,2 +1,9 @@
-<h1>Drawings#edit</h1>
-<p>Find me in app/views/drawings/edit.html.erb</p>
+<center><h1>Drawing Edit</h1></center>
+
+<center><div id="canvas_content">
+    <canvas id="simple_sketch" width="800" height="500"></canvas>
+
+    <form action="/drawings" method="post">
+      <input type="button" id="save" value="Save to PNG">
+    </form>
+</div></center>

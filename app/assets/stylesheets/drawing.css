@@ -1,6 +1,6 @@
 @import "compass/css3";
 .slick-slide {
-  margin-top: 60px !important;
+  margin-top: 20px !important;
 }
 
 .flex-container {
@@ -22,8 +22,8 @@
   border: 1px solid black;
   background: white;
   padding: 5px;
-  width: 200px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
   margin-top: 10px;
   border-radius: 8px;
   
