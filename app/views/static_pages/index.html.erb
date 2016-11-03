@@ -8,15 +8,16 @@
 
   <center><div id="map" class="box-shadow"></div></center>
 
-
   <% unless current_user %>
     <h4>Sign up or log in to start drawing!</h3>
   <% end %>
 
   <ul class="flex-container">
     <% @drawings.reverse.each do |drawing| %>
-      <div class="img_border">
-        <img src="<%= drawing.image_url %>" class="flex-item box-shadow">
+      <div class="flex-border box-shadow">
+        <div>
+          <img src="<%= drawing.image_url %>" class="flex-item img_border">
+        </div>
       </div>
     <% end %>
   </ul>
