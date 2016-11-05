@@ -1,5 +1,5 @@
 body {
-  background-color: #001e2d;
+  background-color: white;
 }
 
 .slider-bg {
@@ -8,11 +8,10 @@ body {
   padding-bottom: 1px;
   border-bottom: 1px solid #bfbfbf;
   /*background: linear-gradient(to bottom, #f2f9fe 0%,#d6f0fd 100%);*/
-  background-color: #001e2d;
+  /*background-color: #001e2d;*/
 }
 
 .imgs-bg-index {
-  background-color: #00476b;
   padding-top: 20px;
   padding-bottom: 20px;
 }
