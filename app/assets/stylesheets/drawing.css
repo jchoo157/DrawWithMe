@@ -3,6 +3,14 @@
   margin-top: 20px !important;
 }
 
+.monsterrat {
+  background-color: #113b51;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+
 .img_border {
   border: 3px solid #EAEAEA;
 }
@@ -24,26 +32,21 @@
 
 .flex-border {
   background-color: #F2F2F2;
-  padding-bottom: 30px;
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 10px;
   border-radius: 8px;
   margin: 10px;
 }
 
 .flex-item {
   background: white;
-  padding: 5px;
   width: 300px;
   height: 200px;
-  margin-top: 10px;
   border-radius: 8px;
   
   line-height: 150px;
   color: white;
   font-weight: bold;
-  font-size: 3em;
   text-align: center;
 }
 
