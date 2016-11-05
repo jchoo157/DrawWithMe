@@ -1,25 +1,30 @@
-<div id="new_drawing font30">
+<div id="map" class="box-shadow"></div>
 
-  <div class="slider center autoplay">
-    <% @drawings.each do |drawing| %>
-      <img src="<%= drawing.image_url %>", class="image_border slick-image box-shadow">
-    <% end %>
+<% unless current_user %>
+  <center><h4 class="monsterrat">Sign up or log in to start drawing!</h4></center>
+<% end %>
+
+<div id="new_drawing font30">
+  <div class="slider-bg">
+    <div class="slider center autoplay">
+      <%= image_tag('daft_punk.jpg', class: "image_border slick-image box-shadow") %>
+      <%= image_tag('duck.jpg', class: "image_border slick-image box-shadow") %>
+      <%= image_tag('howl.jpg', class: "image_border slick-image box-shadow") %>
+      <%= image_tag('zoey.jpg', class: "image_border slick-image box-shadow") %>
+    </div>
   </div>
 
-  <center><div id="map" class="box-shadow"></div></center>
-
-
-  <% unless current_user %>
-    <h4>Sign up or log in to start drawing!</h3>
-  <% end %>
-
-  <ul class="flex-container">
-    <% @drawings.reverse.each do |drawing| %>
-      <div class="img_border">
-        <img src="<%= drawing.image_url %>" class="flex-item box-shadow">
-      </div>
-    <% end %>
-  </ul>
+  <div class="imgs-bg-index">
+    <ul class="flex-container">
+      <% @drawings.reverse.each do |drawing| %>
+        <div class="flex-border box-shadow">
+          <p>Title</p>
+          <img src="<%= drawing.image_url %>" class="flex-item img_border">
+          <p>Upvotes: 70 Comments: 30</p>
+        </div>
+      <% end %>
+    </ul>
+  </div>
 
 </div>
 
